@@ -92,7 +92,7 @@ public class WhereAmI extends ActionBarActivity {
                     Address address = addresses.get(0);
 
                     for (int i = 0; i < address.getMaxAddressLineIndex(); i++)
-                        sb.append(address.getAddressLine(1)).append("\n");
+                        sb.append(address.getAddressLine(i)).append("\n");
 
                     sb.append(address.getLocality()).append("\n");
                     sb.append(address.getPostalCode()).append("\n");
